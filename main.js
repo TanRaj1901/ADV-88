@@ -40,7 +40,7 @@ window.addEventListener("keydown" , my_keydown);
 function my_keydown(e) {
     keyPressed = e.keyCode;
     console.log(keyPressed);
-    if (e.shiftKey == true && keyPressed == '187') {
+    if (keyPressed == '187') {
         console.log("Shift");
         img_width = img_width + 10;
         img_height = img_height + 10;
@@ -48,7 +48,7 @@ function my_keydown(e) {
         document.getElementById("current_height").innerHTML=img_height;
     }
 
-    if (e.shiftKey == true && keyPressed == '189') {
+    if (keyPressed == '189') {
         console.log("Shift and - pressed together");
         img_width = block_width - 10;
         img_height = block_height - 10;
