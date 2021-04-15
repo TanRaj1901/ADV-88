@@ -50,8 +50,8 @@ function my_keydown(e) {
 
     if (keyPressed == '189') {
         console.log("Shift and - pressed together");
-        img_width = block_width - 10;
-        img_height = block_height - 10;
+        img_width = img_width - 10;
+        img_height = img_height - 10;
         document.getElementById("current_width").innerHTML=img_width;
         document.getElementById("current_height").innerHTML=img_height;
     }
