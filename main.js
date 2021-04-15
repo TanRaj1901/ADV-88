@@ -41,7 +41,7 @@ function my_keydown(e) {
     keyPressed = e.keyCode;
     console.log(keyPressed);
     if (keyPressed == '187') {
-        console.log("Shift");
+        console.log("Character Size Increased");
         img_width = img_width + 10;
         img_height = img_height + 10;
         document.getElementById("current_width").innerHTML=img_width;
@@ -49,7 +49,7 @@ function my_keydown(e) {
     }
 
     if (keyPressed == '189') {
-        console.log("Shift and - pressed together");
+        console.log("Character Size Decreased");
         img_width = img_width - 10;
         img_height = img_height - 10;
         document.getElementById("current_width").innerHTML=img_width;
